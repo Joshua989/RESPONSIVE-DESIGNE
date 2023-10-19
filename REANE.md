@@ -1,0 +1,3 @@
+What Is Responsive Design?
+
+Responsive design is a web design approach that makes websites adapt and look good on different devices and screen sizes, such as desktop computers, tablets, and smartphones. It ensures that a website's layout, images, and content adjust automatically to provide the best user experience, regardless of the device being used. This means that users can easily read and navigate a website without needing to zoom in or scroll excessively, no matter if they're on a big desktop monitor or a small phone screen. Responsive design is all about making websites user-friendly and accessible across a wide range of devices.
