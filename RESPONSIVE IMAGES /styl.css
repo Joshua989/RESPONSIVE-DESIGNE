@@ -2,19 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 2200px;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    color: white;
 }
 
 header {
     background-color: blueviolet;
     color: #fff;
     padding: 10px 0;
+    width: 100%;
 }
 
 nav ul {
@@ -55,38 +56,65 @@ a:hover{
   background-color: #f9f9f9;
   padding: 80px 0;
   text-align: center;
+  height: 300px
+  
 }
 
 .carousel {
   display: flex;
   overflow: hidden;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
   transition: transform 0.3s ease-in-out;
   background-color: blueviolet;
-  height: 200px
+  
 }
 
 .carousel-slide {
   flex: 0 0 100%;
   background-color: yellow;
-  width: 100%;
+  width: 100%
+  
 }
 .carousel-slide img{
-  height: 100%;
-  width :50%;
+  width:100%;
+  height: 100%
 }
 
 .products {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: blueviolet;
+  color: white
 }
+.products .container-shoe{
+  display: flex;
+  padding :10px;
+  gap:10px;
+  
+}
+.products .container-shoe .product-item{
+  border: 1px solid black;
+  padding: 0;
+  
+}
+.products .container-shoe .product-item img{
+    max-width: 100%;
+    max-height: 70%;
+    margin: 0
+
+}
+.products .container-shoe .product-item img:hover{
+  
+}
+
 
 .contact {
   background-color: #f9f9f9;
   padding: 80px 0;
   text-align: center;
 }
+
 
 /* Additional styles for the contact form */
 form {
