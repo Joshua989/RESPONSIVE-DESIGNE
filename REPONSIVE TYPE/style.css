@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Default Typography Styles */
+.heading {
+    font-size: 2rem; /* 1rem = 16px, so 2rem = 32px */
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 1em; /* 1em is equal to the font size of the parent element, so it's responsive */
+    line-height: 1.5;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 1.5rem; /* Decrease the font size for smaller screens */
+    }
+
+    .paragraph {
+        font-size: 0.9em; /* Decrease the font size for smaller screens */
+    }
+}

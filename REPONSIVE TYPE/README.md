@@ -105,3 +105,45 @@ p {
 ```
 
 Responsive typography is essential for ensuring a consistent and readable user experience across various devices and screen sizes. It combines the principles of relative units, media queries, and typographic scaling to create text that adapts to the user's context while maintaining aesthetics and readability.
+
+
+
+for the practical example
+
+Let's break down the concepts of `rem` and `em` units and how they were used to create responsive typography in the provided example. Additionally, I'll explain the CSS properties used for the design.
+
+### Understanding `rem` and `em` Units:
+
+- **`rem` Unit (Root EM):**
+  - `rem` stands for "root em." It is relative to the font-size of the root element (`<html>` or `<body>`). By setting a font size using `rem`, all elements using `rem` for properties like `font-size` will be relative to the root element's font size. This makes it easier to create consistent typography across the entire website.
+
+- **`em` Unit:**
+  - `em` is relative to the font size of the parent element. For example, if a parent element has a font size of `16px`, `1em` is equal to `16px`. If a child element within this parent has a font size set to `0.5em`, it will be `8px` (`0.5 * 16px`).
+
+### How the Design Was Made Responsive:
+
+1. **Using `rem` for Heading (`h1`) Font Size:**
+   - `.heading { font-size: 2rem; }`
+   - In this example, the `h1` heading font size is set to `2rem`, which means it's `32px` (since `1rem = 16px`). The `rem` unit ensures that the font size is relative to the root element's font size, making it consistent and easily adjustable for responsiveness.
+
+2. **Using `em` for Paragraph (`p`) Font Size:**
+   - `.paragraph { font-size: 1em; }`
+   - The `p` paragraph font size is set to `1em`. Since it's relative to the parent element (`.container`), the `p` font size is based on the font size of the `.container` element. If the font size of `.container` changes, the `p` font size adjusts accordingly, making it responsive.
+
+3. **Media Query for Smaller Screens:**
+   - `@media (max-width: 600px) { /* ... */ }`
+   - Within the media query, the font sizes are adjusted for smaller screens to improve readability. For example:
+     - `.heading { font-size: 1.5rem; }` reduces the heading font size for screens smaller than or equal to `600px`.
+     - `.paragraph { font-size: 0.9em; }` decreases the paragraph font size for smaller screens.
+     
+### CSS Properties Used for Styling:
+
+- **`font-size`**: Sets the font size of the text.
+- **`margin`**: Specifies the margin space around elements.
+- **`padding`**: Sets the padding space inside elements.
+- **`line-height`**: Defines the space between lines of text.
+- **`max-width`**: Sets the maximum width of an element.
+- **`color`**: Specifies the text color.
+- **`@media`**: Defines a media query for applying styles based on specific conditions (like screen width).
+  
+By using `rem` and `em` units and incorporating a media query, the typography in the example becomes responsive. Adjusting the font size of the root element (`<html>` or `<body>`) allows for a consistent and scalable typography system across the entire website. Media queries ensure that the design adapts gracefully to various screen sizes, providing an optimal user experience.

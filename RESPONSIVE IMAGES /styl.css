@@ -151,9 +151,64 @@ button:hover {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: top;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        height: auto;
+    }
+
+    .container {
+        width: 90%;
+    }
+    header{
+      position: fixed;
+      width: 100%;
+      margin: 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+     .products .container-shoe{
+       display: flex;
+       flex-direction: column;
+     }
+   .products .container-shoe .product-item {
+     display: block;
+   }
+
+    .products .container-shoe .product-item img {
+        max-height: 100px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        width: calc(100% - 40px);
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+   
 }
